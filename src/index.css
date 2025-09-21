@@ -1,0 +1,13 @@
+@import './colors.css';
+
+/* Universal box-sizing fix */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--very-dark-brown);
+}

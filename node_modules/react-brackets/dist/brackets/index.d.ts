@@ -1,0 +1,4 @@
+/// <reference types="react" />
+import { ISingleEliminationProps } from '../types/SingleElimination';
+declare const SingleElimination: ({ rounds, rtl, roundClassName, bracketClassName, swipeableProps, mobileBreakpoint, renderSeedComponent, roundTitleComponent, }: ISingleEliminationProps) => JSX.Element;
+export { SingleElimination };

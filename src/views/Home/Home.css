@@ -1,0 +1,34 @@
+.home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  background-size: cover;          /* Escala para cubrir todo el contenedor */
+  background-repeat: no-repeat;    /* No repetir la imagen */
+  background-position: center;     /* Centra la imagen */
+  image-rendering: auto;           /* Usa la mejor calidad de renderizado posible */
+  -webkit-image-rendering: auto;
+  -moz-image-rendering: auto;
+  padding-top: 3em;
+  color: white;
+}
+
+.tavern {
+  background-image: url('/wood.png');
+}
+
+.retro {
+  background-image: url('/neon.jpeg');
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.back-button {
+  margin-top: 2rem;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}

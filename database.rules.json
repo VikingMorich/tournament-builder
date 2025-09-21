@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "TournamentList": {
+      ".read": "auth != null",
+      "$tournamentId": {
+        ".read": true,
+        ".write": "auth != null"
+      }
+    }
+  }
+}

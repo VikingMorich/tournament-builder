@@ -1,0 +1,4 @@
+/// <reference types="react" />
+import { IRenderSeedProps } from '../types/Seed';
+export declare const renderTitle: (title: string | JSX.Element) => JSX.Element;
+export declare const renderSeed: ({ seed, breakpoint }: IRenderSeedProps) => JSX.Element;

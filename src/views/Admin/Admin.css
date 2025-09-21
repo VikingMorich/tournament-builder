@@ -1,0 +1,164 @@
+
+.admin-panel {
+  display: flex;
+  flex-direction: column;
+  /* max-width: 36rem; */
+  color: var(--almost-white);
+  height: 100vh;
+  min-width: 100vw;
+  background-size: cover;          /* Escala para cubrir todo el contenedor */
+  background-repeat: no-repeat;    /* No repetir la imagen */
+  background-position: center;     /* Centra la imagen */
+  image-rendering: auto;           /* Usa la mejor calidad de renderizado posible */
+  -webkit-image-rendering: auto;
+  -moz-image-rendering: auto;
+  overflow: auto;
+}
+
+.admin-panel .w-100px {
+  width: 10rem !important;
+  border-radius: 8px !important;
+  margin-top: 60px !important;
+}
+
+.taverna {
+  background-image: url('/wood.png');
+}
+
+.retro {
+  background-image: url('/neon.jpeg');
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.retro input, .retro select, .retro button {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.retro .edit-tournament-container, .retro .config-league-scores, .retro .admin-nav, .retro .scores-table, .retro .match-wrapper, .retro .edit-results-container, .retro .edit-players-container {
+  background-color: var(--retro-dark);
+  border-color: var(--retro-neon-blue-mid);
+}
+
+.retro .edit-tournament-select, .retro .edit-tournament-input, .retro .edit-players-input, .retro .edit-results-select, .retro .admin-nav-button, .retro .edit-results-input {
+  background-color: var(--retro-mid);
+  border-color: var(--retro-neon-blue-mid);
+}
+
+.retro .admin-nav-button:hover, .retro .edit-players-button:hover, .retro .edit-results-button:hover, .retro .edit-tournament-button:hover{
+  background-color: var(--retro-neon-blue-mid);
+}
+
+.retro .admin-nav-button.active, .retro .edit-players-button, .retro .edit-results-button, .retro .edit-tournament-button {
+  background-color: var(--retro-neon-blue);
+  border-color: var(--retro-neon-blue-mid);
+}
+
+.retro .image-preview, .retro .bracket-tournament-logo {
+  border-color: var(--retro-neon-blue);
+}
+
+.retro .delete-tournament-button, .retro .start-tournament-button {
+  background-color: var(--retro-neon-pink);
+}
+
+.retro .delete-tournament-button:hover, .retro .start-tournament-button:hover {
+  background-color: var(--retro-neon-pink-dark);
+}
+
+.retro .bracket-tournament-title, .retro .bracket-tournament-subtitle, .retro .edit-tournament-title, .retro .edit-players-title, .retro .edit-results-title {
+  color: var(--retro-neon-blue-white);
+}
+
+.retro .bracket-tournament-title {
+  border-color: var(--retro-neon-blue-white);
+}
+
+.retro .matches-title, .retro .edit-results-round-title, .retro .match-title {
+  color: var(--retro-neon-blue-dark);
+}
+
+.retro .edit-results-match-wrapper, .retro .td {
+  border-color: var(--retro-neon-blue-dark);
+}
+
+.retro .match-player.max {
+  background-color: var(--retro-mid);
+  box-shadow: 0 0 3px 3px var(--retro-neon-blue-dark) inset;
+}
+
+.retro .tr:first-child {
+  box-shadow: 0 0 4px 4px var(--retro-neon-blue) inset;
+}
+
+.retro .tr:nth-child(2) {
+    box-shadow: 0 0 4px 4px var(--retro-neon-mid) inset;
+}
+
+.retro .tr:nth-child(3) {
+    box-shadow: 0 0 4px 4px var(--retro-neon-pink) inset;
+}
+
+.retro .edit-tournament-input:focus, .retro .edit-tournament-select:focus, .retro .edit-players-input:focus, .retro .edit-results-select:focus, .retro .edit-results-input:focus {
+  box-shadow: 0 0 0 2px var(--retro-neon-blue-white);
+}
+
+.retro .combat-wrapper{
+    border-color: var(--retro-neon-blue-mid);
+}
+
+.retro .combat:before, .retro .combat::after {
+  border-color: var(--retro-neon-blue) !important;
+}
+
+.admin-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.6rem;
+  background-color: var(--dark-brown);
+  padding: 10px;
+  position: fixed;
+  border-bottom: 1px solid var(--primary-color);
+  width: 100vw;
+  min-height: 60px;
+}
+
+.admin-nav-button {
+  background-color: var(--warm-brown);
+  border: 1px solid var(--primary-color);
+  color: var(--almost-white);
+  font-weight: bold;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.admin-nav-button:hover {
+  background-color: var(--dark-brown-2);
+}
+
+.admin-nav-button.active {
+  background-color: var(--primary-color);
+  color: var(--dark-brown);
+  border-color: var(--light-gold);
+}
+
+.admin-panel-content {
+  margin-top: calc(1rem + 60px);
+}
+
+.logout-button {
+  color: white;
+  margin: 10px auto 20px;
+  width: min-content;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.logout-button:hover {
+  text-decoration: underline;
+}

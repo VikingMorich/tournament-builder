@@ -1,0 +1,6 @@
+import { ISeedProps } from '../types/Seed';
+export declare const SeedItem: import("styled-components").StyledComponent<"div", any, {}, never>;
+export declare const SeedTeam: import("styled-components").StyledComponent<"div", any, {}, never>;
+export declare const SeedTime: import("styled-components").StyledComponent<"div", any, ISeedProps, never>;
+export declare const SingleLineSeed: import("styled-components").StyledComponent<"div", any, ISeedProps, never>;
+export declare const Seed: import("styled-components").StyledComponent<"div", any, ISeedProps, never>;
